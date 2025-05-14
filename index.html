@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+
+    <h2>My Favorite Kenyan Snacks</h2>
+    <ol type="I">
+        <li>Mandazi</li>
+        <li>Samosa</li>
+        <li>Mahindi Choma</li>
+        <li>Kachumbari</li>
+        <li>Viazi Karai</li>
+    </ol>
+
+    <h2>Scenic Kenya</h2>
+    <img src="https://images.pexels.com/photos/3354647/pexels-photo-3354647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+         alt="The Maasai Mara landscape"
+         width="600">
+    <p><small>Image source: Pexels.com (Maasai Mara)</small></p>
+
+    <h2>Local Contacts</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juma Otieno</td>
+                <td>Nairobi CBD</td>
+                <td>0712 345 678</td>
+                <td>juma.otieno@example.ke</td>
+            </tr>
+            <tr>
+                <td>Fatuma Ali</td>
+                <td>Mombasa Island</td>
+                <td>0722 987 654</td>
+                <td>fatuma.ali@example.ke</td>
+            </tr>
+            <tr>
+                <td>Kamau Mwangi</td>
+                <td>Nakuru Town</td>
+                <td>0733 112 233</td>
+                <td>kamau.mwangi@example.ke</td>
+            </tr>
+            <tr>
+                <td>Wambui Kimani</td>
+                <td>Kisumu City</td>
+                <td>0700 445 566</td>
+                <td>wambui.kimani@example.ke</td>
+            </tr>
+            <tr>
+                <td>David Kiprotich</td>
+                <td>Eldoret Municipality</td>
+                <td>0799 887 766</td>
+                <td>david.kiprotich@example.ke</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>User Registration</h2>
+    <form action="#" method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="8">
+        </div>
+
+        <div>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate">
+        </div>
+
+        <div>
+            <label for="county">County:</label>
+            <select id="county" name="county">
+                <option value="" disabled selected>Select your county</option>
+                <option value="nairobi">Nairobi</option>
+                <option value="mombasa">Mombasa</option>
+                <option value="kisumu">Kisumu</option>
+                <option value="nakuru">Nakuru</option>
+                <option value="uasin_gishu">Uasin Gishu</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Preferred Language:</p>
+            <input type="radio" id="swahili" name="language" value="swahili">
+            <label for="swahili">Swahili</label><br>
+            <input type="radio" id="english" name="language" value="english">
+            <label for="english">English</label><br>
+            <input type="radio" id="other_language" name="language" value="other">
+            <label for="other_language">Other</label>
+        </div>
+
+        <div>
+            <p>Interests:</p>
+            <input type="checkbox" id="football" name="interests" value="football">
+            <label for="football">Football</label><br>
+            <input type="checkbox" id="safari" name="interests" value="safari">
+            <label for="safari">Wildlife Safari</label><br>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Kenyan Music</label><br>
+            <input type="checkbox" id="travel" name="interests" value="travel">
+            <label for="travel">Exploring Kenya</label>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <h2>Kenyan Music Example</h2>
+    <audio controls>
+        <source src="audio.ogg" type="audio/ogg">
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <p><small>(Replace "audio.ogg" and "audio.mp3" with a Kenyan audio file path)</small></p>
+
+    <h2>Kenyan Wildlife Video Example</h2>
+    <video width="640" height="360" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        Your browser does not support the video element.
+    </video>
+    <p><small>(Replace "video.mp4" and "video.webm" with a Kenyan video file path)</small></p>
+
+</body>
+</html>
